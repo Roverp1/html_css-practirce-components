@@ -1,0 +1,49 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+:root {
+  --main-color: #087f5b;
+  --grey-color: #343a40;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ------------------------ */
+/* GENERAL STYLES */
+/* ------------------------ */
+body {
+  font-family: "Inter", sans-serif;
+  color: var(--grey-color);
+  line-height: 1;
+}
+
+.table {
+  width: 800px;
+  margin: 100px auto;
+  font-size: 18px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 32px;
+}
+
+.table__element--first-row,
+.table__element--first-column {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.table__element--first-row {
+  background-color: var(--main-color);
+  color: #f1f3f5;
+  padding: 16px;
+}
