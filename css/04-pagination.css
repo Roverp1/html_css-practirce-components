@@ -25,3 +25,58 @@ body {
   color: var(--grey-color);
   line-height: 1;
 }
+
+.pagination {
+  width: 600px;
+  margin: 200px auto;
+  font-size: 18px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.pagination__btn {
+  box-sizing: content-box;
+  cursor: pointer;
+
+  height: 24px;
+  width: 24px;
+  border: 1px solid var(--main-color);
+  border-radius: 50%;
+  padding: 12px;
+  /*font-weight: 900;*/
+
+  background-color: #fff;
+  color: var(--main-color);
+}
+
+.pagination__btn:hover {
+  background-color: var(--main-color);
+  color: #f1f3f5;
+}
+
+.pagination a {
+  text-decoration: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 16px;
+  width: 16px;
+  padding: 17px;
+  border-radius: 50%;
+
+  color: var(--grey-color);
+}
+
+.pagination a:hover {
+  color: #f1f3f5;
+  background-color: var(--main-color);
+}
+
+.pagination span {
+  cursor: default;
+}
