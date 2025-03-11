@@ -1,0 +1,61 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+:root {
+  --main-color: ;
+  --grey-color: #343a40;
+}
+
+* {
+  box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  position: relative;
+
+  height: 100vh;
+  font-size: 18px;
+
+  color: var(--grey-color);
+}
+
+.gallery {
+  position: absolute;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.website-item {
+  height: 64px;
+  width: 128px;
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.3);
+}
+
+.website-item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*.website-item__img-link {*/
+/*  text-decoration: none;*/
+/*}*/
+/**/
+/*.website-item__text-link {*/
+/*  text-decoration: none;*/
+/*  color: inherit;*/
+/*}*/
