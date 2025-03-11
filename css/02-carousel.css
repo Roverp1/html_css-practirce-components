@@ -22,22 +22,31 @@ FONT SIZE SYSTEM (px)
 /* ------------------------ */
 body {
   font-family: "Inter", sans-serif;
-  color: var(--grey-color);
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
   line-height: 1;
+
+  color: var(--grey-color);
 }
 
 .carousel {
-  height: 260px;
-  width: 800px;
-  margin: 100px auto;
-  background-color: var(--main-color);
-  border-radius: 10px;
   position: relative;
-  padding: 0 48px;
 
   display: flex;
   align-items: center;
   gap: 32px;
+
+  height: 260px;
+  width: 800px;
+  border-radius: 10px;
+  padding: 0 48px;
+
+  background-color: var(--main-color);
 }
 
 .carousel__icon {

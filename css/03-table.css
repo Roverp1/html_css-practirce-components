@@ -22,15 +22,21 @@ FONT SIZE SYSTEM (px)
 /* ------------------------ */
 body {
   font-family: "Inter", sans-serif;
-  color: var(--grey-color);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
   line-height: 1;
+
+  color: var(--grey-color);
 }
 
 table {
   border-collapse: collapse;
 
   width: 800px;
-  margin: 100px auto;
   /*box-shadow: 0 0 24px rgba(0, 0, 0, 0.2);*/
   font-size: 18px;
 }

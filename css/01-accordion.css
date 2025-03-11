@@ -22,17 +22,24 @@ FONT SIZE SYSTEM (px)
 /* ------------------------ */
 body {
   font-family: "Inter", sans-serif;
+  position: relative;
+
+  height: 100vh;
+
   color: var(--grey-color);
-  margin: 50px 0;
 }
 
 .accordion {
-  width: 800px;
-  margin: 0 auto;
+  position: absolute;
 
   display: flex;
   flex-direction: column;
   gap: 24px;
+
+  width: 800px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .accordion__item-box {
