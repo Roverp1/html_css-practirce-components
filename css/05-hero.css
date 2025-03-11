@@ -1,0 +1,118 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+:root {
+  --main-color: #e67e22;
+  --grey-color: #343a40;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ------------------------ */
+/* GENERAL STYLES */
+/* ------------------------ */
+body {
+  margin-bottom: 120px;
+  font-family: "Rubik", sans-serif;
+
+  line-height: 1;
+
+  color: var(--grey-color);
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-section {
+  position: relative;
+  margin-bottom: 96px;
+
+  background-image: linear-gradient(
+      rgba(10, 10, 10, 0.5),
+      rgba(10, 10, 10, 0.5)
+    ),
+    url(../hero.jpg);
+  background-size: cover;
+
+  height: 100vh;
+
+  color: #f8f9fa;
+}
+
+.hero-section__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 32px 0;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.hero-section__section {
+  position: absolute;
+
+  width: 1200px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero-section__section--inner {
+  width: 50%;
+}
+
+.hero-section__section h1 {
+  font-size: 52px;
+  margin-bottom: 32px;
+  font-weight: 700;
+}
+
+.hero-section__section p {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 48px;
+}
+
+.section__btn:link,
+.section__btn:active,
+.section__btn:visited {
+  text-decoration: none;
+
+  display: inline-block;
+
+  padding: 16px 32px;
+  border-radius: 9px;
+  font-size: 20px;
+  font-weight: 600;
+
+  color: inherit;
+  background-color: var(--main-color);
+}
+
+.random-section {
+  /*padding: 48px*/
+
+  color: #495057;
+}
+
+.random-section h2 {
+  font-size: 32px;
+  margin-bottom: 48px;
+}
+
+.random-section p {
+  font-size: 20px;
+  line-height: 1.6;
+}
