@@ -7,7 +7,7 @@ FONT SIZE SYSTEM (px)
 */
 
 :root {
-  --main-color: ;
+  --main-color: #017669;
   --grey-color: #343a40;
 }
 
@@ -33,7 +33,7 @@ body {
 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 32px;
+  gap: 48px;
 
   top: 50%;
   left: 50%;
@@ -41,9 +41,16 @@ body {
 }
 
 .website-item {
-  height: 64px;
-  width: 128px;
-  box-shadow: 0 0 24px rgba(0, 0, 0, 0.3);
+  width: 450px;
+  padding: 4px;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+  /*box-shadow: 0 0 24px rgba(0, 0, 0, 0.1);*/
+}
+
+.website-item:hover {
+  box-shadow: 0 16px 12px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.2s;
 }
 
 .website-item a {
@@ -51,11 +58,26 @@ body {
   color: inherit;
 }
 
-/*.website-item__img-link {*/
-/*  text-decoration: none;*/
+/*.website-item__img-link img:hover {*/
+/*  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);*/
+/*  transition: box-shadow 0.2s;*/
 /*}*/
-/**/
-/*.website-item__text-link {*/
-/*  text-decoration: none;*/
-/*  color: inherit;*/
-/*}*/
+
+.website-item__img-link img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  /*padding: 24px;*/
+  margin-bottom: 12px;
+}
+
+.website-item__text-link {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.website-item__text-link:hover {
+  text-decoration: underline;
+
+  color: var(--main-color);
+}
