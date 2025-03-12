@@ -51,17 +51,23 @@ body {
 
 .carousel__icon {
   box-sizing: content-box;
+  cursor: pointer;
   position: absolute;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 
   height: 24px;
   width: 24px;
   padding: 8px;
   border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 
   stroke: var(--main-color);
   stroke-width: 1.8;
   background-color: #fff;
+}
+
+.carousel__icon:hover {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+  transition: box-shadow 0.3s;
 }
 
 .carousel__icon.left {
@@ -117,6 +123,10 @@ body {
   color: var(--main-color);
   border: 2px solid var(--main-color);
   border-radius: 50%;
+}
+
+.circle-container__circle:hover {
+  background-color: var(--main-color);
 }
 
 .carousel__circle-container .selected {
